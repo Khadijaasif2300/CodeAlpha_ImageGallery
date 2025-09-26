@@ -28,7 +28,8 @@ A modern and responsive **Image Gallery** built with **HTML, CSS, and JavaScript
 ---
 
 ## 📸 Screenshots  
-![Uploading Screenshot 2025-09-27 014848.png…]()
+<img width="1352" height="645" alt="Screenshot 2025-09-27 014848" src="https://github.com/user-attachments/assets/42c3b775-e533-4b07-be70-fc15e08e35ac" />
+
 
 ---
 
