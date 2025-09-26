@@ -22,13 +22,14 @@ A modern and responsive **Image Gallery** built with **HTML, CSS, and JavaScript
 ---
 
 ## 🌐 Live Demo & Repository  
-🔗 **GitHub Repository:** [Image Gallery](https://github.com/Khadijaasif2300/Image-Gallery)  
-🌍 **Live Demo:** [Image Gallery](https://khadijaasif2300.github.io/Image-Gallery/)  
+🔗 **GitHub Repository:** [Image Gallery]([https://github.com/Khadijaasif2300/Image-Gallery](https://github.com/Khadijaasif2300/CodeAlpha_ImageGallery.git))  
+🌍 **Live Demo:** [Image Gallery]([https://khadijaasif2300.github.io/Image-Gallery/](https://khadijaasif2300.github.io/CodeAlpha_ImageGallery/)) 
 
 ---
 
 ## 📸 Screenshots  
-<img width="1366" height="642" alt="Image Gallery Screenshot" src="https://github.com/user-attachments/assets/your-screenshot-id-here" />  
+![Uploading image.png…]()
+
 
 ---
 
