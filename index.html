@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Image-Gallery</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+<section class="search">
+    <div class="heading"> Image Gallery </div>
+    <div class="para">Browse beautiful images of different catogeries</div>
+    <div class="searching">
+        <div class="searchbar"><input type="text" placeholder="Enter Name"></div>
+        <button><i class="fa-solid fa-magnifying-glass"></i></button>
+    </div>
+</section>
+
+<!-- options -->
+<section class="options">
+    <div class="all">All</div>
+    <div class="nature">Nature</div>
+    <div class="wild">Wild</div>
+    <div class="flower">Flower</div>
+    <div class="food">Food</div>
+</section>
+
+<!-- view -->
+<section class="view">
+    <div class="item animal2"><img src="pics/animal2.avif" alt=""></div>
+    <div class="item flower1"><img src="pics/flower1.jpg" alt=""></div>
+    <div class="item food3"><img src="pics/food3.jpg" alt=""></div>
+    <div class="item animal3"><img src="pics/animal3.jpg" alt=""></div>
+    <div class="item flower3"><img src="pics/flower3.jfif" alt=""></div>
+    <div class="item animal1"><img src="pics/animal1.webp" alt=""></div>
+    <div class="item flower2"><img src="pics/flower2.jpg" alt=""></div>
+    <div class="item nature2"><img src="pics/nature2.jpg" alt=""></div>
+    <div class="item food2"><img src="pics/food2.jpg" alt=""></div>
+    <div class="item food1"><img src="pics/food1.jpg" alt=""></div>
+    <div class="item nature1"><img src="pics/nature1.jpg" alt=""></div>
+</section>
+
+<!-- Lightbox Modal -->
+<div id="lightbox" class="lightbox">
+    <span class="close"><i class="fa-solid fa-xmark"></i></span>
+    <img class="lightbox-img" src="" alt="">
+    <span class="prev"><i class="fa-solid fa-chevron-left"></i></span>
+    <span class="next"><i class="fa-solid fa-chevron-right"></i></span>
+</div>
+
+
+<script src="gallery.js"></script>
+</body>
+</html>

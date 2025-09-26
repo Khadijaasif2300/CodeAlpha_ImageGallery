@@ -1,0 +1,240 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.search {
+  height: 35vh;
+  background-color: rgb(143, 125, 99);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.heading {
+  margin-top: 10px;
+  width: 80%;
+  text-align: center;
+  color: white;
+  font-size: 55px;
+  font-weight: 800;
+}
+
+.para {
+  margin-top: 15px;
+  width: 80%;
+  text-align: center;
+  color: white;
+  font-size: 20px;
+}
+
+.searching {
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+input {
+  height: 40px;
+  width: 50vw;
+  border: none;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+  padding-left: 10px;
+}
+
+button {
+  height: 40px;
+  width: 40px;
+  border: none;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  background: white;
+  cursor: pointer;
+}
+
+.options {
+  height: 10vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.options div {
+  height: 30px;
+  min-width: 60px;
+  padding: 0 15px;
+  background-color: burlywood;
+  border-radius: 50px;
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: maroon;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.options div:hover {
+  background-color: maroon;
+  color: white;
+}
+
+.view {
+  background-color: burlywood;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px 0;
+  gap: 20px;
+}
+
+.view .item {
+  width: 30%;
+  height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 8px;
+  cursor: pointer; /* so it looks clickable */
+}
+
+.view .item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+  .view .item {
+    width: 45%;
+    height: 220px;
+  }
+}
+
+@media (max-width: 500px) {
+  .search {
+    height: auto;
+    padding: 20px 10px;
+    text-align: center;
+  }
+
+  .heading {
+    font-size: 28px;
+    width: 100%;
+  }
+
+  .para {
+    font-size: 14px;
+    width: 100%;
+    margin-top: 8px;
+  }
+
+  input {
+    width: 70vw;
+    font-size: 14px;
+  }
+
+  button {
+    width: 35px;
+    height: 40px;
+  }
+
+  .options {
+    flex-wrap: wrap;
+    gap: 8px;
+    padding: 10px;
+    height: auto;
+  }
+
+  .options div {
+    width: auto;
+    padding: 5px 12px;
+    font-size: 14px;
+    margin: 5px;
+  }
+
+  .view {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .view .item {
+    width: 90%;
+    height: 200px;
+  }
+}
+
+/* ===================== */
+/* Lightbox Styles       */
+/* ===================== */
+.lightbox {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.9);
+  align-items: center;
+  justify-content: center;
+}
+
+.lightbox-img {
+  max-width: 90%;
+  max-height: 80%;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(255,255,255,0.2);
+}
+
+.lightbox .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  cursor: pointer;
+}
+
+.lightbox .prev,
+.lightbox .next {
+  position: absolute;
+  top: 50%;
+  padding: 10px;
+  cursor: pointer;
+  user-select: none;
+  transform: translateY(-50%);
+}
+
+.lightbox .prev { left: 20px; }
+.lightbox .next { right: 20px; }
+
+/* Font Awesome icons inside */
+.lightbox .close i,
+.lightbox .prev i,
+.lightbox .next i {
+  font-size: 40px;
+  color: white;
+}
+
+.lightbox .prev i,
+.lightbox .next i {
+  font-size: 50px;
+}
+
+.lightbox .prev:hover i,
+.lightbox .next:hover i,
+.lightbox .close:hover i {
+  color: #ccc;
+}
